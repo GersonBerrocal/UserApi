@@ -1,0 +1,95 @@
+const UserMock = [{
+  id: 1,
+  first_name: "Maurise",
+  last_name: "Mayworth",
+  email: "mmayworth0@drupal.org",
+  gender: "Male",
+  Country: "Indonesia"
+}, {
+  id: 2,
+  first_name: "Evered",
+  last_name: "Slate",
+  email: "eslate1@go.com",
+  gender: "Male",
+  Country: "Comoros"
+}, {
+  id: 3,
+  first_name: "Lauri",
+  last_name: "Dockree",
+  email: "ldockree2@squidoo.com",
+  gender: "Female",
+  Country: "Thailand"
+}, {
+  id: 4,
+  first_name: "Cori",
+  last_name: "De Ath",
+  email: "cdeath3@omniture.com",
+  gender: "Female",
+  Country: "Indonesia"
+}, {
+  id: 5,
+  first_name: "Gunner",
+  last_name: "Alpin",
+  email: "galpin4@myspace.com",
+  gender: "Male",
+  Country: "Indonesia"
+}, {
+  id: 6,
+  first_name: "Janean",
+  last_name: "Dominguez",
+  email: "jdominguez5@comcast.net",
+  gender: "Female",
+  Country: "Bulgaria"
+}, {
+  id: 7,
+  first_name: "Ange",
+  last_name: "Bloggett",
+  email: "abloggett6@cafepress.com",
+  gender: "Male",
+  Country: "China"
+}, {
+  id: 8,
+  first_name: "Elane",
+  last_name: "Barnfather",
+  email: "ebarnfather7@plala.or.jp",
+  gender: "Female",
+  Country: "South Korea"
+}, {
+  id: 9,
+  first_name: "Percival",
+  last_name: "Dirkin",
+  email: "pdirkin8@nba.com",
+  gender: "Male",
+  Country: "China"
+}, {
+  id: 10,
+  first_name: "Locke",
+  last_name: "Jesson",
+  email: "ljesson9@state.tx.us",
+  gender: "Male",
+  Country: "Czech Republic"
+}, {
+  id: 11,
+  first_name: "Page",
+  last_name: "Ca",
+  email: "pcaa@opera.com",
+  gender: "Male",
+  Country: "China"
+}, {
+  id: 12,
+  first_name: "Hobey",
+  last_name: "Ayer",
+  email: "hayerb@xinhuanet.com",
+  gender: "Male",
+  Country: "Indonesia"
+}, {
+  id: 13,
+  first_name: "Melodee",
+  last_name: "Mears",
+  email: "mmearsc@webeden.co.uk",
+  gender: "Female",
+  Country: "China"
+}];
+module.exports = {
+  UserMock
+}
