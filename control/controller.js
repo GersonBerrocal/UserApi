@@ -4,7 +4,6 @@ const userService = new UserService();
 
 const getUsers = async (req, res, next) => {
   try {
-    throw new Error("Error al obtener todos los usuarios")
     const data = await userService.getUsers();
     res
       .status(200)
