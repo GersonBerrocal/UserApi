@@ -4,10 +4,6 @@ const config = require('../config/config');
 const DB_NAME = encodeURIComponent(config.DB_NAME);
 const DB_URL = config.DB_URL;
 
-console.log("Sin uri : ", config.DB_URL);
-console.log("Con uri : ", DB_URL);
-
-
 class MongoLib {
   constructor() {
     this.client = new MongoClient(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
