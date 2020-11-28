@@ -1,17 +1,26 @@
-const config = require('./../../config/config');
+const config = require('../../config/config');
+const boom = require('@hapi/boom');
 
-const withErrorStack = (err, stack) => config.dev ? { err, stack } : { err };
+const withErrorStack = (err, stack) => config.dev ? { ...err, stack } : { err };
 
 const logError = (err, req, res, next) => {
   console.log(err);
   next(err);
 }
 const errorHandler = (err, req, res, next) => {
-  res.status(err.status || 500);
-  res.json(withErrorStack(err.message, err.stack));
+  const { output: { statusCode, payload } } = err
+  res.status(statusCode);
+  res.json(withErrorStack(payload, err.stack));
+}
+
+const wrapError = (err, req, res, next) => {
+  if (!err.isBoom)
+    next(boom.badImplementation(err));
+  next(err)
 }
 
 module.exports = {
   logError,
-  errorHandler
+  errorHandler,
+  wrapError
 }
